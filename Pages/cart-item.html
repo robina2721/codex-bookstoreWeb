@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CODEX - Cart Item List Page</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="book-filter.css" />
+    <!-- Fontawesome Link for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!--- google font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" sizes="57x57" href="../favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="../favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="../favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+<link rel="manifest" href="../favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar-2">
+        <div class="logo">
+          <div class="img">
+            <img src="../images/logorob.png" alt="" />
+          </div>
+          <div class="title">
+            <h4>CODEX<i class="fa-solid fa-grid"></i></h4>
+            <small>Book Store Website</small>
+          </div>
+        </div>
+        <div class="search-box">
+          <div class="search-field">
+            <input
+              type="text"
+              placeholder="Search over 30 Thousand Book titles"
+            />
+            <button class="search-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </div>
+        <div class="nav-end">
+          <button class="likebtn">
+            <i class="fa-regular fa-heart"></i> <span>35</span>
+          </button>
+          <button class="cart">
+            <a href="cart-item.html"><i class="fa-solid fa-cart-shopping"></i> <span>4</span></a>
+          </button>
+          <div class="profile-img">
+           
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="breadcrumb-container">
+        <ul class="breadcrumb">
+          <li><a href="#" style="color: #6c5dd4">Shop</a></li>
+          <li><a href="#">Cart</a></li>
+        </ul>
+      </div>
+
+    <section class="cart-item page">
+        <h2>Book Cart</h2>
+        <div class="product-table">
+            <table cellspacing=0>
+                <tr class="heading">
+                    <th>Product Img</th>
+                    <th>Product Name</th>
+                    <th>Unit Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Delete</th>
+                </tr>
+                <tr class="data">
+                    <td>
+                        <img src="../images/sememen.jpg" alt="">
+                    </td>
+                    <td>SEMEMEN</td>
+                    <td>$45</td>
+                    <td>
+                        <div class="input-group">
+                            <div class="quantity">
+                                <input
+                                  type="button"
+                                  value="-"
+                                  class="button-minus"
+                                  data-field="quantity"
+                                />
+                                <input
+                                  type="text"
+                                  step="1"
+                                  min="1"
+                                  value="1"
+                                  name="quantity"
+                                  class="quantity-field"
+                                  style="width: 4.5rem"
+                                />
+                                <input
+                                  type="button"
+                                  value="+"
+                                  class="button-plus"
+                                  data-field="quantity"
+                                />
+                              </div>
+                        </div>
+                    </td>
+                    <td>$45</td>
+                    <td><i class="fa-solid fa-trash"></i></td>
+                </tr>
+                <tr class="data">
+                    <td>
+                        <img src="../images/book-6.jpg" alt="">
+                    </td>
+                    <td>Harry Potter</td>
+                    <td>$28</td>
+                    <td>
+                        <div class="input-group">
+                            <div class="quantity">
+                                <input
+                                  type="button"
+                                  value="-"
+                                  class="button-minus"
+                                  data-field="quantity"
+                                />
+                                <input
+                                  type="text"
+                                  step="1"
+                                  min="1"
+                                  value="1"
+                                  name="quantity"
+                                  class="quantity-field"
+                                  style="width: 4.5rem"
+                                />
+                                <input
+                                  type="button"
+                                  value="+"
+                                  class="button-plus"
+                                  data-field="quantity"
+                                />
+                              </div>
+                        </div>
+                    </td>
+                    <td>$28</td>
+                    <td><i class="fa-solid fa-trash"></i></td>
+                </tr>
+                <tr class="data">
+                    <td>
+                        <img src="../images/book-7.jpg" alt="">
+                    </td>
+                    <td>Heroes Of Olympus</td>
+                    <td>$25</td>
+                    <td>
+                        <div class="input-group">
+                            <div class="quantity">
+                                <input
+                                  type="button"
+                                  value="-"
+                                  class="button-minus"
+                                  data-field="quantity"
+                                />
+                                <input
+                                  type="text"
+                                  step="1"
+                                  min="1"
+                                  value="1"
+                                  name="quantity"
+                                  class="quantity-field"
+                                  style="width: 4.5rem"
+                                />
+                                <input
+                                  type="button"
+                                  value="+"
+                                  class="button-plus"
+                                  data-field="quantity"
+                                />
+                              </div>
+                        </div>
+                    </td>
+                    <td>$25</td>
+                    <td><i class="fa-solid fa-trash"></i></td>
+                </tr>
+                <tr class="data">
+                    <td>
+                        <img src="../images/book-9.jpg" alt="">
+                    </td>
+                    <td>The Ruins Of Gorlan</td>
+                    <td>$40</td>
+                    <td>
+                        <div class="input-group">
+                            <div class="quantity">
+                                <input
+                                  type="button"
+                                  value="-"
+                                  class="button-minus"
+                                  data-field="quantity"
+                                />
+                                <input
+                                  type="text"
+                                  step="1"
+                                  min="1"
+                                  value="1"
+                                  name="quantity"
+                                  class="quantity-field"
+                                  style="width: 4.5rem"
+                                />
+                                <input
+                                  type="button"
+                                  value="+"
+                                  class="button-plus"
+                                  data-field="quantity"
+                                />
+                              </div>
+                        </div>
+                    </td>
+                    <td>$40</td>
+                    <td><i class="fa-solid fa-trash"></i></td>
+                </tr>
+                
+                          
+            </table>
+        </div>
+                <!-- <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr> -->
+    </section>
+
+    <section class="discount-summary">
+      <div class="discount-section">
+        <h4>Discount Coupon</h4>
+        <div class="discount-form">
+          <input type="text" placeholder="Enter Coupon Code" style="text-transform: uppercase;">
+          <button>Apply Coupon</button>
+        </div>
+      </div>
+      <div class="summary-section">
+        <h4>Cart Subtotal</h4>
+        <div class="order-detail-table">
+          <table>
+            <tr>
+              <td>Order Subtotal</td>
+              <td>$125</td>
+            </tr>
+            <tr>
+              <td>Shipping</td>
+              <td>Free Shipping</td>
+            </tr>
+            <tr>
+              <td>Coupon</td>
+              <td>$5</td>
+            </tr>
+            <tr>
+              <td>Total</td>
+              <td>$506</td>
+            </tr>
+          </table>
+          <button><a href="checkout.html">Proceed To Checkout</a></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="book-sale">
+      <div class="heading">
+        <h4>Books On Sale</h4>
+        <div class="arrowbtn">
+          <i id="left" class="fa-solid fa-angle-left"></i>
+          <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
+      </div>
+      <div class="book-container">
+        <div class="wrapper">
+          <ul class="carousel">
+            <li class="card">
+              <div class="img">
+                <img src="../images/book-1.jpg" alt="" />
+                <span class="badge">50%</span>
+              </div>
+              <h5>The Giver</h5>
+              <div class="genre">
+                <span>adventure,</span><span>survival</span>
+              </div>
+              <div class="footer">
+                <span class="star"><i class="fa fa-star"></i> 4.7</span>
+                <div class="price">
+                  <span>$45.4</span>
+                  <span><strike>$90.4</strike></span>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <div class="img">
+                <img src="../images/book-2.jpg" alt="" />
+                <span class="badge">50%</span>
+              </div>
+              <h5>The Wright ...</h5>
+              <div class="genre">
+                <span>adventure,</span><span>survival</span>
+              </div>
+              <div class="footer">
+                <span class="star"><i class="fa fa-star"></i> 4.7</span>
+                <div class="price">
+                  <span>$45.4</span>
+                  <span><strike>$90.4</strike></span>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <div class="img">
+                <img src="../images/book-9.jpg" alt="" />
+                <span class="badge">50%</span>
+              </div>
+              <h5>The Ruins Of...</h5>
+              <div class="genre">
+                <span>adventure,</span><span>survival</span>
+              </div>
+              <div class="footer">
+                <span class="star"><i class="fa fa-star"></i> 4.7</span>
+                <div class="price">
+                  <span>$45.4</span>
+                  <span><strike>$90.4</strike></span>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <div class="img">
+                <img src="../images/book-10.jpg" alt="" />
+                <span class="badge">50%</span>
+              </div>
+              <h5>Percy Jackson</h5>
+              <div class="genre">
+                <span>adventure,</span><span>survival</span>
+              </div>
+              <div class="footer">
+                <span class="star"><i class="fa fa-star"></i> 4.7</span>
+                <div class="price">
+                  <span>$45.4</span>
+                  <span><strike>$90.4</strike></span>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <div class="img">
+                <img src="../images/book-5.jpg" alt="" />
+                <span class="badge">50%</span>
+              </div>
+              <h5>To kill a...</h5>
+              <div class="genre">
+                <span>adventure,</span><span>survival</span>
+              </div>
+              <div class="footer">
+                <span class="star"><i class="fa fa-star"></i> 4.7</span>
+                <div class="price">
+                  <span>$45.4</span>
+                  <span><strike>$90.4</strike></span>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <div class="img">
+                <img src="../images/book-6.jpg" alt="" />
+                <span class="badge">50%</span>
+              </div>
+              <h5>Horry Potter</h5>
+              <div class="genre">
+                <span>adventure,</span><span>survival</span>
+              </div>
+              <div class="footer">
+                <span class="star"><i class="fa fa-star"></i> 4.7</span>
+                <div class="price">
+                  <span>ETB 145.4</span>
+                  <span><strike>ETB 190.4</strike></span>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <div class="img">
+                <img src="../images/book-7.jpg" alt="" />
+                <span class="badge">50%</span>
+              </div>
+              <h5>Heroes of ...</h5>
+              <div class="genre">
+                <span>adventure,</span><span>survival</span>
+              </div>
+              <div class="footer">
+                <span class="star"><i class="fa fa-star"></i> 4.7</span>
+                <div class="price">
+                  <span>$45.4</span>
+                  <span><strike>$90.4</strike></span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="logo-description">
+          <div class="logo">
+            <div class="img">
+              <img src="../images/logorob.png" alt="">
+            </div>
+            <div class="title">
+              <h4>CODEX</h4>
+              <small>Book Store Website</small>
+            </div>
+          </div>
+          <div class="logo-body">
+            <p>A reader lives a thousand lives before he dies . . .
+                 The man who never reads lives only one.</p>
+          </div>
+          <div class="social-links">
+            <h4>Follow Us</h4>
+            <ul class="links">
+              <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="categories list">
+          <h4>Book Categories</h4>
+          <ul>
+            <li><a href="">Action</a></li>
+            <li><a href="">Adventure</a></li>
+            <li><a href="">Comedy</a></li>
+            <li><a href="">Crime</a></li>
+            <li><a href="">Drama</a></li>
+            <li><a href="">Fantasy</a></li>
+            <li><a href="">Horror</a></li>
+          </ul>
+        </div>
+        <div class="quick-links list">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="../index.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="book-filter.html">Products</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="registration.html">Sign Up</a></li>
+            <li><a href="cart-item.html">Cart</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+          </ul>
+        </div>
+      
+          <ul>
+            <li><a href=""><i class="fa-solid fa-location-dot"></i>Wolaita Sodo, Ethiopia </a></li>
+            <li><a href=""><i class="fa-solid fa-phone"></i>+251996881921</a></li>
+            <li><a href=""><i class="fa-solid fa-envelope"></i>robsanyeabsra@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <button class="back-to-top"><i class="fa-solid fa-chevron-up"></i></button>
+
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+    crossorigin="Robsan"
+    referrerpolicy="no-referrer"
+  ></script>
+    <script src="../js/repeat-js.js"></script>
+    <script src="../js/increment-decrement.js"></script>
+    <script src="../js/back-to-top.js"></script>
+  </body>
+</html>

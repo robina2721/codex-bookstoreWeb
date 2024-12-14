@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CODEX - Book Store Website</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!--- google font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fontawesome Link for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+  </head>
+  <body>
+  	
+    <header>
+
+      <nav class="navbar">
+        <div class="logo">
+          <div class="img">
+            <img src="images/logorob.png" alt="" />
+          </div>
+          <div class="logo-header">
+            <h4>CODEX<a href="index.html"></a></h4>
+            <small>Book Store Website</small>
+          </div>
+        </div>
+        <ul class="nav-list">
+          <div class="logo">
+            <div class="title">
+              <div class="img">
+                <img src="images/logorob.png" alt="" />
+              </div>
+              <div class="logo-header">
+                <h4><a href="index.html">CODEX</a></h4>
+                <small>Book Store Website</small>
+              </div>
+            </div>
+            <button class="close"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pages/service.html">Service</a></li>
+          <li><a href="pages/contact.html">Contact</a></li>
+          <li><a href="Pages/book-filter.html">Books</a></li>
+          <button class="login"><a href="pages/login.html">Log In</a></button>
+          <button class="signup">
+            <i class="fa-solid fa-user"></i><a href="pages/registration.html">Sign Up</a>
+          </button>
+        </ul>
+
+
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="main">
+        <div class="content">
+          <marquee><h1>ወደ CODEX መጽሐፍ መደብር እንኳን ደህና መጡ</h1></marquee>      
+          <h2>ልዩ 50% ቅናሽ</h2>
+          <h5>ለተማሪዎቻችን ማህበረሰብ</h5>
+          <p>
+            አንባቢ ሳይሞት አንድ ሺህ ህይወት ይኖራል . . . <br>
+            የማያነብ ሰው ግን የሚኖረው አንዴ ብቻ ነው።
+          </p>
+          <div class="btns">
+            <button>Get The Deal<i class="fa-solid fa-arrow-right"></i></button>
+            <button>See other Promos</button>
+          </div>
+        </div>
+        <div class="img">
+          <img
+            src="images/sihuread.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="square-dot">
+        <i class="fa-solid fa-square"></i>
+        <i class="fa-solid fa-square"></i>
+        <i class="fa-solid fa-square"></i>
+        <i class="fa-solid fa-square"></i>
+        <i class="fa-solid fa-square"></i>
+        <i class="fa-solid fa-square"></i>
+        <i class="fa-solid fa-square"></i>
+        <i class="fa-solid fa-square"></i>
+        <i class="fa-solid fa-square"></i>
+        <i class="fa-solid fa-square"></i>
+        <i class="fa-solid fa-square"></i>
+        <i class="fa-solid fa-square"></i>
+      </div>
+      <div class="orange-circle"></div>
+      <div class="blue-circle"></div>
+    </section>
+
+    <section class="service">
+      <div class="service-container">
+        <div class="service-card">
+          <div class="icon">
+            <i class="fa-solid fa-bolt-lightning"></i>
+          </div>
+          <div class="service-content">
+            <h5>Quick Delivery</h5>
+            <p>
+           Experience convenience with our
+            quick and hassle-free shipping options.
+            </p>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="icon">
+            <i class="fa-solid fa-shield"></i>
+          </div>
+          <div class="service-content">
+            <h5>Secure Payment</h5>
+            <p>
+           Shop with confidence with our secure payment options. 
+           
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="icon">
+            <i class="fa-solid fa-thumbs-up"></i>
+          </div>
+          <div class="service-content">
+            <h5>Best Quality</h5>
+            <p>
+              Experience the pinnacle of quality with our products, 
+              coupled with secure payment options. 
+            </p>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="icon">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div class="service-content">
+            <h5>Return Guarantee</h5>
+            <p>
+             Indulge in worry-free shopping with our return guarantee, alongside 
+             secure payment and top-tier quality. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="suggestion">
+      <div class="container">
+        <div class="recommend">
+          <h4>Recommended For You</h4>
+          <p>
+            Explore our curated selection of recommended books, backed by secure payment,
+             top-notch quality, and hassle-free returns.
+          </p>
+          <div class="book-container">
+        
+            <div class="book">
+              <figure>
+                <a href="Pages/book-detail.html"
+                  ><img src="images/godanisa.webp" alt=""
+                /></a>
+              </figure>
+            </div>
+            <div class="book">
+              <figure>
+                <a href="Pages/book-detail.html"
+                  ><img src="images/piasa.jpg" alt=""
+                /></a>
+              </figure>
+            </div>
+            <div class="book">
+              <figure>
+                <a href="Pages/book-detail.html"
+                  ><img src="images/gurage.jpg" alt=""
+                /></a>
+              </figure>
+            </div>
+            <div class="book">
+              <figure>
+                <a href="Pages/book-detail.html"
+                  ><img src="images/tigray.jpg" alt=""
+                /></a>
+              </figure>
+            </div>
+          </div>
+          <div class="circle-1"></div>
+          <div class="circle-2"></div>
+          <div class="square-dot">
+            <i class="fa-solid fa-square"></i>
+            <i class="fa-solid fa-square"></i>
+            <i class="fa-solid fa-square"></i>
+            <i class="fa-solid fa-square"></i>
+            <i class="fa-solid fa-square"></i>
+            <i class="fa-solid fa-square"></i>
+            <i class="fa-solid fa-square"></i>
+            <i class="fa-solid fa-square"></i>
+            <i class="fa-solid fa-square"></i>
+            <i class="fa-solid fa-square"></i>
+            <i class="fa-solid fa-square"></i>
+            <i class="fa-solid fa-square"></i>
+          </div>
+        </div>
+        <div class="popular">
+          <h4>Popular in 2020</h4>
+          <p>
+           Discover the latest and greatest in popular literature, 
+           accompanied by secure payment, premium quality, and hassle-free returns. 
+          </p>
+          <div class="book-container">
+            <div class="book">
+              <figure>
+                <a href="Pages/book-detail.html"
+                  ><img src="images/bealu2.jpg" alt=""
+                /></a>
+              </figure>
+            </div>
+            <div class="book">
+              <figure>
+                <a href="Pages/book-detail.html"
+                  ><img src="images/kolfe.webp" alt=""
+                /></a>
+              </figure>
+            </div>
+            <div class="book">
+              <figure>
+                <a href="Pages/book-detail.html"
+                  ><img src="images/book-7.jpg" alt=""
+                /></a>
+              </figure>
+            </div>
+            <div class="book">
+              <figure>
+                <a href="Pages/book-detail.html"
+                  ><img src="images/book-8.jpg" alt=""
+                /></a>
+              </figure>
+            </div>
+          </div>
+          <div class="circle-1"></div>
+          <div class="circle-2"></div>
+          <div class="square-dot">
+            <i class="fa-solid fa-square"></i>
+            <i class="fa-solid fa-square"></i>
+            <i class="fa-solid fa-square"></i>
+            <i class="fa-solid fa-square"></i>
+            <i class="fa-solid fa-square"></i>
+            <i class="fa-solid fa-square"></i>
+            <i class="fa-solid fa-square"></i>
+            <i class="fa-solid fa-square"></i>
+            <i class="fa-solid fa-square"></i>
+            <i class="fa-solid fa-square"></i>
+            <i class="fa-solid fa-square"></i>
+            <i class="fa-solid fa-square"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="offer">
+      <div class="header">
+        <h4>Special Offers</h4>
+        <p>
+         There is no friend as loyal as a book!
+        </p>
+      </div>
+      <div class="offer-container">
+        <div class="offer">
+          <div class="img">
+            <a href="Pages/book-detail.html"
+              ><img src="images/godanisa.webp" alt=""
+            /></a>
+          </div>
+          <div class="offer-content">
+            <h5>GODANISA</h5>
+            <div class="genre">
+              <span>biography</span>
+              <span>Fiction</span>
+             
+            </div>
+            <p>
+              A novel. Bibliographic information. Title, Godaannisa: asoosama. 
+              Author, Dhaabaa Wayyeessaa. Publisher, Fulbaana, 1992. Length, 164 pages
+            </p>
+            <small>DHAABAA WOYESAA</small>
+            <div class="offer-bottom">
+              <button class="cartbtn">
+                <i class="fa-solid fa-cart-shopping"></i>Add to cart
+              </button>
+              <div class="price">
+                <strong><span>ETB</span>300</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="offer">
+          <div class="img">
+            <a href="Pages/book-detail.html"
+              ><img src="images/book-3.jpg" alt=""
+            /></a>
+          </div>
+          <div class="offer-content">
+            <h5>Radical Gardening</h5>
+            <div class="genre">
+              <span>biography</span>
+              <span>thriller</span>
+            
+            </div>
+            <p>
+              you like the idea of gardening as a way of protest, 
+              you should check out George McKay's new book “Radical Gardening
+            </p>
+            <small>George McKay</small>
+            <div class="offer-bottom">
+              <button class="cartbtn">
+                <i class="fa-solid fa-cart-shopping"></i>Add to cart
+              </button>
+              <div class="price">
+                <strong><span>ETB</span>180.7</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="offer">
+          <div class="img">
+            <a href="pages/book-detail.html"
+              ><img src="images/book-2.jpg" alt=""
+            /></a>
+          </div>
+          <div class="offer-content">
+            <h5>The Bright Brothers</h5>
+            <div class="genre">
+              <span>biography</span>
+              <span>thriller</span>
+              <span>horror</span>
+            </div>
+            <p>
+             The Wright brothers, Orville Wright (August 19, 1871 – January 30, 1948) 
+             and Wilbur Wright (April 16, 1867 – May 30, 1912)
+            </p>
+            <small>Kevin Smiley</small>
+            <div class="offer-bottom">
+              <button class="cartbtn">
+                <i class="fa-solid fa-cart-shopping"></i>Add to cart
+              </button>
+              <div class="price">
+                <strong><span>ETB</span>250.7</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sale">
+      <div class="header">
+        <h4>Flash Sale</h4>
+        <p>
+         Limited-time offers on select items! Don't miss out on incredible discounts <br>
+         for a short period only. Hurry, grab your favorites before they're gone!
+        </p>
+      </div>
+      <div class="timer">
+        <div class="hours">
+          <span id="hour"></span>
+          <small>Hours</small>
+        </div>
+        <div class="minutes">
+          <span id="minute"></span>
+          <small for="minute">Minutes</small>
+        </div>
+        <div class="seconds">
+          <span id="second"></span>
+          <small for="second">Seconds</small>
+        </div>
+      </div>
+      <div class="book-container">
+        <div class="book">
+          <div class="img">
+            <a href="Pages/book-detail.html"
+              ><img src="images/godanisa.webp" alt="" />
+            </a>
+          </div>
+      
+          <h5>Godanisa</h5>
+          <small>Thriller</small>
+          <div class="price">
+            <span>ETB 220</span>
+            <span><strike>ETB 300</strike></span>
+          </div>
+        </div>
+        <div class="book">
+          <div class="img">
+            <a href="Pages/book-detail.html"
+              ><img src="images/wolaita.jpg" alt=""
+            /></a>
+          </div>
+          <h5>ISHATAMU LOMIYA</h5>
+          <small>Thriller</small>
+          <div class="price">
+            <span>$150</span>
+            <span><strike>ETB 250.00</strike></span>
+          </div>
+        </div>
+        <div class="book">
+          <div class="img">
+            <a href="Pages/book-detail.html"
+              ><img src="images/fiker2.jpg" alt=""
+            /></a>
+          </div>
+          <h5>LOVE TO GRAVE</h5>
+          <small>Thriller</small>
+          <div class="price">
+            <span>ETB 230</span>
+            <span><strike>ETB 350.00</strike></span>
+          </div>
+        </div>
+        <div class="book">
+          <div class="img">
+            <a href="Pages/book-detail.html"
+              ><img src="images/gurage.jpg" alt=""
+            /></a>
+          </div>
+          <h5>THE GURAGE</h5>
+          <small>Thriller</small>
+          <div class="price">
+            <span>ETB 188</span>
+            <span><strike>ETB 230</strike></span>
+          </div>
+        </div>
+        <div class="book">
+          <div class="img">
+            <a href="Pages/book-detail.html"
+              ><img src="images/tigray.jpg" alt="" />
+            </a>
+          </div>
+          <h5>The Giver</h5>
+          <small>Thriller</small>
+          <div class="price">
+            <span>ETB 178</span>
+            <span><strike>ETB 260</strike></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="book-sale">
+      <div class="heading">
+        <h4>Books On Sale</h4>
+        <div class="arrowbtn">
+          <i id="left" class="fa-solid fa-angle-left"></i>
+          <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
+      </div>
+      <div class="book-container">
+        <div class="wrapper">
+          <ul class="carousel">
+            <li class="card">
+              <div class="img">
+                <a href="Pages/book-detail.html"><img src="images/book-1.jpg" alt="" /></a>
+                <span class="badge">50%</span>
+              </div>
+              <h5>The Giver</h5>
+              <div class="genre">
+                <span>adventure,</span><span>survival</span>
+              </div>
+              <div class="footer">
+                <span class="star"><i class="fa fa-star"></i> 4.7</span>
+                <div class="price">
+                  <span>ETB 145.4</span>
+                  <span><strike>ETB 190.4</strike></span>
+                </div>
+              </div>
+            </li>
+               <li class="card">
+              <div class="img">
+                <a href="Pages/book-detail.html"><img src="images/GODANISA.WEBP" alt="" /></a>
+                <span class="badge">50%</span>
+              </div>
+              <h5>GODANISA ...</h5>
+              <div class="genre">
+                <span>adventure,</span><span>survival</span>
+              </div>
+              <div class="footer">
+                <span class="star"><i class="fa fa-star"></i> 4.7</span>
+                <div class="price">
+                  <span>ETB 245.4</span>
+                  <span><strike>ETB 290.4</strike></span>
+                </div>
+              </div>
+            </li>
+
+               <li class="card">
+              <div class="img">
+                <a href="Pages/book-detail.html"><img src="images/piasa.jpg" alt="" /></a>
+                <span class="badge">50%</span>
+              </div>
+              <h5>PIASA ...</h5>
+              <div class="genre">
+                <span>adventure,</span><span>survival</span>
+              </div>
+              <div class="footer">
+                <span class="star"><i class="fa fa-star"></i> 4.7</span>
+                <div class="price">
+                  <span>ETB 145.4</span>
+                  <span><strike>ETB 190.4</strike></span>
+                </div>
+              </div>
+            </li>
+
+            <li class="card">
+              <div class="img">
+                <a href="Pages/book-detail.html"><img src="images/book-2.jpg" alt="" /></a>
+                <span class="badge">50%</span>
+              </div>
+              <h5>The Wright ...</h5>
+              <div class="genre">
+                <span>adventure,</span><span>survival</span>
+              </div>
+              <div class="footer">
+                <span class="star"><i class="fa fa-star"></i> 4.7</span>
+                <div class="price">
+                  <span>ETB 245.4</span>
+                  <span><strike>ETB 290.4</strike></span>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <div class="img">
+                <a href="Pages/book-detail.html"><img src="images/book-9.jpg" alt="" /></a>
+                <span class="badge">50%</span>
+              </div>
+              <h5>The Ruins Of...</h5>
+              <div class="genre">
+                <span>adventure,</span><span>survival</span>
+              </div>
+              <div class="footer">
+                <span class="star"><i class="fa fa-star"></i> 4.7</span>
+                <div class="price">
+                  <span>ETB 145.4</span>
+                  <span><strike>ETB 190.4</strike></span>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <div class="img">
+                <a href="Pages/book-detail.html"><img src="images/book-10.jpg" alt="" /></a>
+                <span class="badge">50%</span>
+              </div>
+              <h5>Percy Jackson</h5>
+              <div class="genre">
+                <span>adventure,</span><span>survival</span>
+              </div>
+              <div class="footer">
+                <span class="star"><i class="fa fa-star"></i> 4.7</span>
+                <div class="price">
+                  <span>ETB 145.4</span>
+                  <span><strike>ETB 190.4</strike></span>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <div class="img">
+                <a href="Pages/book-detail.html"><img src="images/book-5.jpg" alt="" /></a>
+                <span class="badge">50%</span>
+              </div>
+              <h5>To kill a...</h5>
+              <div class="genre">
+                <span>adventure,</span><span>survival</span>
+              </div>
+              <div class="footer">
+                <span class="star"><i class="fa fa-star"></i> 4.7</span>
+                <div class="price">
+                  <span>ETB 145.4</span>
+                  <span><strike>ETB 190.4</strike></span>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <div class="img">
+                <a href="Pages/book-detail.html"><img src="images/fiker2.jpg" alt="" /></a>
+                <span class="badge">50%</span>
+              </div>
+              <h5>Love to Grave</h5>
+              <div class="genre">
+                <span>adventure,</span><span>survival</span>
+              </div>
+              <div class="footer">
+                <span class="star"><i class="fa fa-star"></i> 4.7</span>
+                <div class="price">
+                  <span>ETB 145.4</span>
+                  <span><strike>ETB 190.4</strike></span>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <div class="img">
+                <a href="Pages/book-detail.html"><img src="images/book-7.jpg" alt="" /></a>
+                <span class="badge">50%</span>
+              </div>
+              <h5>Heroes of ...</h5>
+              <div class="genre">
+                <span>adventure,</span><span>survival</span>
+              </div>
+              <div class="footer">
+                <span class="star"><i class="fa fa-star"></i> 4.7</span>
+                <div class="price">
+                  <span>ETB 145.4</span>
+                  <span><strike>ETB 190.4</strike></span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature">
+      <div class="main">
+        <div class="content">
+          <h4>Featured Books</h4>
+          <p>
+           Dive into the gripping tale of love and betrayal in 'The Secret Garden', <br>
+           a timeless classic by Frances Hodgson Burnett. Follow young Mary Lennox as she discovers<br>
+            a hidden sanctuary and unlocks the mysteries of the enchanting garden.<br> 
+          </p>
+          <div class="featured-book-card">
+            <div class="img">
+              <a href="pages/book-detail.html"><img src="images/sihu.png" alt="" /></a>
+            </div>
+            <div class="card-description">
+              <div class="card-header">
+                <div class="icon">
+                  <i class="fa-regular fa-bookmark"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <div class="title">
+                  <h5>ፍቅር እስከ መቃብር</h5>
+                  <small>Tragedy</small>
+                </div>
+              </div>
+              <div class="card-body">
+                <h6>Synopsis</h6>
+                <p>
+                  Love to the Grave (Amharic: ፍቅር እስከ መቃብር) is an Amharic novel by <br>
+                  Haddis Alemayehu published in 1968. It is one of the best known novels in <br>
+                  Ethiopia and is considered a classic of Ethiopian literature. <br>
+                  The novel gained popularity largely due to its widespread dissemination on Ethiopian radio during the Derg regime.
+                </p>
+                <div class="author-year">
+                  <div class="author">
+                    <small>Written by</small>
+                    <strong>Haddis Alemayehu (Amharic: ሐዲስ ዓለማየሁ)</strong>
+                  </div>
+                  <div class="year">
+                    <small>Year</small>
+                    <strong>1968</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="price">
+                  <span>$84.78</span>
+                  <strike>$90.00</strike>
+                </div>
+                <div class="cartbtn">
+                  <button><i class="fa-solid fa-cart-shopping"></i>Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="book-section">
+          <div class="container">
+            <div class="img">
+              <a href="pages/book-detail.html"><img src="images/tigray.jpg" alt="" /></a>
+            </div>
+            <div class="img">
+              <a href="pages/book-detail.html"><img src="images/book-1.jpg" alt="" /></a>
+            </div>
+            <div class="img">
+              <a href="pages/book-detail.html"><img src="images/zigora.webp" alt="" /></a>
+            </div>
+            <div class="img">
+              <a href="pages/book-detail.html"><img src="images/book-4.jpg" alt="" /></a>
+            </div>
+            <div class="img">
+              <a href="pages/book-detail.html"><img src="images/book-5.jpg" alt="" /></a>
+            </div>
+            <div class="img">
+              <a href="pages/book-detail.html"><img src="images/godanisa.webp" alt="" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="circle-1"></div>
+      <div class="circle-2"></div>
+    </section>
+
+    <section class="news">
+      <div class="heading">
+        <div class="title">
+          <h4>Latest News</h4>
+          <p>
+         "Stay informed with the latest headlines and breaking news updates from around the globe. <br>
+         From politics to entertainment, sports to technology, our comprehensive coverage keeps you up-to-date <br> on everything that matters.
+          </p>
+        </div>
+        <div class="btn">
+          <button>View More <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+      <div class="news-container">
+        <div class="post">
+          <div class="img">
+            <img src="images/reader1.gif" alt="" />
+          </div>
+          <h5>Why reading is important for our children?</h5>
+          <p>
+            "Reading cultivates critical thinking, boosts vocabulary, and enhances communication skills in children, 
+            <a href="">Continue reading</a>
+          </p>
+          <div class="post-footer">
+            <div class="img">
+              <img src="images/rob1.png" alt="" />
+            </div>
+            <div class="details">
+              <strong>Robsan Damisew</strong>
+              <small>5 August 2020</small>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="img">
+            <img src="images/news-2.webp" alt="" />
+          </div>
+          <h5>What technique is good for reading books?</h5>
+          <p>
+            One effective technique for reading books is the SQ3R method:
+             Survey: 
+             Question:
+            <a href="">Continue reading</a>
+          </p>
+          <div class="post-footer">
+            <div class="img">
+              <img src="images/leul.jpg" alt="" />
+            </div>
+            <div class="details">
+              <strong>Leul Belayneh</strong>
+              <small>5 August 2020</small>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="img">
+            <img src="images/news-3.jpg" alt="" />
+          </div>
+          <h5>Why reading is important for our children?</h5>
+          <p>
+            In twilight's embrace, dreams softly stir,
+Whispers of adventure, a world to confer.
+
+            <a href="">Continue reading</a>
+          </p>
+          <div class="post-footer">
+            <div class="img">
+              <img src="images/siraw.jpg" alt="" />
+            </div>
+            <div class="details">
+              <strong>Sirawdink Tadele</strong>
+              <small>5 August 2020</small>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="img">
+            <img src="images/news-4.jpg" alt="" />
+          </div>
+          <h5>Why reading is important for our children?</h5>
+          <p>
+           Stars weave tales in the tapestry of night, As shadows dance, bathed in moonlight's light.
+            <a href="">Continue reading</a>
+          </p>
+          <div class="post-footer">
+            <div class="img">
+              <img src="images/kala.jpg" alt="" />
+            </div>
+            <div class="details">
+              <strong>Kaleb Zewdu</strong>
+              <small>5 August 2020</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="countdown">
+      <div class="container">
+        <div class="customer counter">
+          <div class="icon">
+            <i class="fa-solid fa-user-group"></i>
+          </div>
+          <div class="content">
+            <h4 class="count">125,663</h4>
+            <small>Happy Customers</small>
+          </div>
+        </div>
+        <div class="book counter">
+          <div class="icon">
+            <i class="fa-solid fa-book"></i>
+          </div>
+          <div class="content">
+            <h4 class="count">50,672</h4>
+            <small>Book Collections</small>
+          </div>
+        </div>
+        <div class="store counter">
+          <div class="icon">
+            <i class="fa-solid fa-store"></i>
+          </div>
+          <div class="content">
+            <h4 class="count">1,562</h4>
+            <small>Our Stores</small>
+          </div>
+        </div>
+        <div class="writer counter">
+          <div class="icon">
+            <i class="fa-solid fa-feather"></i>
+          </div>
+          <div class="content">
+            <h4 class="count">457</h4>
+            <small>Famous Writer</small>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subscription">
+      <div class="container">
+        <h4>
+          Subscribe our newsletter for Latest <br />
+          books updates
+        </h4>
+        <div class="input">
+          <input type="text" placeholder="Type your email here" />
+          <button>subscribe</button>
+        </div>
+      </div>
+      <div class="circle-1"></div>
+      <div class="circle-2"></div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="logo-description">
+          <div class="logo">
+            <div class="img">
+              <img src="images/logorob.png" alt="" />
+            </div>
+            <div class="title">
+              <h4>CODEX</h4>
+              <small>Book Store Website</small>
+            </div>
+          </div>
+          <div class="logo-body">
+            <p>
+             A reader lives a thousand lives before he dies . . . The man who never reads lives only one
+            </p>
+          </div>
+          <div class="social-links">
+            <h4>Follow Us</h4>
+            <ul class="links">
+              <li>
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="categories list">
+          <h4>Book Categories</h4>
+          <ul>
+            <li><a href="Pages/book-filter.html">Action</a></li>
+            <li><a href="Pages/book-filter.html">Adventure</a></li>
+            <li><a href="Pages/book-filter.html">Comedy</a></li>
+            <li><a href="Pages/book-filter.html">Crime</a></li>
+            <li><a href="Pages/book-filter.html">Drama</a></li>
+            <li><a href="Pages/book-filter.html">Fantasy</a></li>
+            <li><a href="Pages/book-filter.html">Horror</a></li>
+          </ul>
+        </div>
+        <div class="quick-links list">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="pages/contact.html">Contact Us</a></li>
+            <li><a href="pages/book-filter.html">Products</a></li>
+            <li><a href="pages/login.html">Login</a></li>
+            <li><a href="pages/registration.html">Sign Up</a></li>
+            <li><a href="pages/cart-item.html">Cart</a></li>
+            <li><a href="pages/checkout.html">Checkout</a></li>
+          </ul>
+        </div>
+       
+          <ul>
+            <li>
+              <a href=""
+                ><i class="fa-solid fa-location-dot"></i>wolaita sodo, ethiopia</a
+              >
+            </li>
+            <li>
+              <a href=""><i class="fa-solid fa-phone"></i>+251996881921</a>
+            </li>
+            <li>
+              <a href=""
+                ><i class="fa-solid fa-envelope"></i>robsanyeabsra@gmail.com</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <button class="back-to-top"><i class="fa-solid fa-chevron-up"></i></button>
+    <script src="js/back-to-top.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/repeat-js.js"></script>
+    <script src="js/add-to-cart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+  </body>
+</html>
